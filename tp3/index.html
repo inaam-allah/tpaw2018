@@ -1,33 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<script src="js/form-jquery-validation.js"></script>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+<head><title> TP3 </title>
+
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/form-jquery-validation.js"></script>
     </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+
+
+</head>
+
+	<body>
+		<h1><center>Formulaire de Saisie des donnees personnelles</center></h1>
+		<br>
+		<br/>
+		  <form>
+		  		<div class="row">
+		    	<div class="col">
+		  		<fieldset id="rect">
+           <legend>Nouveau client</legend>
+           <p>
+   <input type="radio" name="civi" value="Mme" /> Madame
+   <input type="radio" name="civi" value="Mlle" /> Mademoiselle
+   <input type="radio" name="civi" value="Mr" /> Monsieur
+
+		  <div class="row">
+		    <div class="col">
+		    	<label for="inputEmail4">Nom</label>
+		      <input type="text" class="form-control col-md-4" id="name" placeholder="Entrez votre Nom">
+		    </div>
+
+		    <div class="col">
+		    	<label for="inputEmail4">Prenom</label>
+		      <input type="text"  class="form-control col-md-4" id="Prenom" placeholder="Entrez votre Prenom">
+		    </div>
+		  </div>
+
+		  <div class="form-row">
+
+		  	<div class="form-group col-md-4">
+		  	<label for="inputDateNaissance">Date de Naissance</label>
+		  	<input type="Date" class="form-control" id="date" name="">
+		  </div>
+		  </div>
+
+
+			
+
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="ex: toto@gmail.com">
+    </div>
+    </div>
+
+  <div class="form-group col-md-6">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="inputAddress2">Complement d'adresse</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, etage">
+  </div>
+
+  <div class="form-row col-md-4">
+    <div class="form-group col-md-4">
+      <label for="inputCity">Ville</label>
+      <input type="text" class="form-control" placeholder="ex: Paris" id="inputCity">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputState">Region</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Essone</option>
+        <option>Yveline</option>
+        <option>Marne la valle</option>
+        <option>Paris</option>
+        <option>Saint Denis</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="inputZip">Code Postal</label>
+      <input type="text" class="form-control" placeholder="ex: 75015" id="inputZip">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+    	<center>
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Verifier
+      </label>
+      	</center>
+    </div>
+  </div>
+		  		<center>
+		  <button type="submit" id="submit" class="btn btn-primary">Sign in</button>
+				
+				
+<input class="btn btn-primary" type="reset" value="Reset">
+</center>
+		</form>  
+		<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Erreur</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Corps de la modal à modifier après validation du formulaire</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>	 
+	</body>
+	
 </html>
